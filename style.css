@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 1em;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Slider Section Styles */
+.slider-section {
+    position: relative;
+    padding: 2em;
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    clip-path: inset(0 50% 0 0);
+}
+
+.image-wrapper .slider-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    background: #333;
+    cursor: ew-resize;
+    z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar a {
+        margin: 0 0.5em;
+    }
+}
